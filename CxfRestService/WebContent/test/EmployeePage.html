@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html>
+<head>
+<link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css"></link>
+<script src="http://ajax.googleapis.com/ajax/libs/angularjs/1.4.8/angular.js"></script>
+<script src="empAppJS.js"></script>
+</head>
+<body ng-app="empApp" ng-controller="empController">
+<div class="well well-lg">
+<b><font color="meron">Employee ID:</font></b><input type="text" placeholder="Employee ID" ng-model="empID" autocomplete maxlength=10><br>
+<button class="btn btn-primary btn-large" ng-click="getEmp()">Submit</button>
+</div>
+<hr>
+ <span ng-show="employees.length > 0 && !isEmp">
+   <table class="table table-striped table-bordered" ng-show="$scope.employees.size!=0">
+						<thead>
+										  <tr>
+														<th>Employee Name</th>
+														<th>Employe ID</th>
+														<th>Email ID</th>
+														<th>Date of join</th>
+														  <th>Department</th>
+										  </tr>
+										</thead>
+						
+										<tbody>
+														
+														  <tr ng-repeat="employee in employees">
+																		<td>{{employee.firstName}}, {{employee.lastName}}</td>
+																		<td>{{employee.employeeId}}</td>
+																		<td>{{employee.email}}</td>
+																		<td>{{employee.dateOfJoining}}</td>
+																		<td>{{employee.department}}</td>
+														  </tr>
+														
+										</tbody>
+						
+						</table> 
+                                                </span>
+                                                <span ng-show="isEmp">
+                                                                <table>
+                                                                                <tr>
+                                                                                                <p>The Employee Details are not found</p>
+                                                                                </tr>
+                                                                </table> 
+                                                                </span>
+
+</body>
+</html>
