@@ -38,10 +38,10 @@ public class AppTest
     }
 	public void testEmpDaoEmployee()throws Exception{
 		EmployeeDao empDao = new EmployeeDao();
-		assertEquals(empDao.getEmployeeDetails("123456").size(),2);
+		assertEquals(empDao.getEmployeeDetails("123456").size(),1);
 	}
 	public void testEmpDaoEmployees() throws Exception{
 		EmployeeDao empDao = new EmployeeDao();
-		assertEquals(empDao.getEmployeeDetails("*").size(),3);
+		assertEquals(empDao.getEmployeeDetails("*").size(),2);
 	}
 }
