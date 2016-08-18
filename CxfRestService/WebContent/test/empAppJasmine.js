@@ -7,7 +7,7 @@ describe('Employee Rest Example', function () {
   beforeEach(inject(function(_$controller_, _$httpBackend_){
     $controller = _$controller_;
 	$httpBackend = _$httpBackend_;
-	$httpBackend.whenGET('http://localhost:8080/CXFRestServiceProj/rest/employeeService/getemployeedetail?employeeId=123456').respond(200, mockEmpList);
+	$httpBackend.whenGET('http://localhost:8080/CXFRestServiceProj/rest/employeeService/getemployeedetail?employeeId=12345').respond(200, mockEmpList);
   }));
 
   describe('empApp module test', function () {
