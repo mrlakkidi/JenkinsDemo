@@ -7,14 +7,14 @@ describe('Employee Rest Example', function () {
   beforeEach(inject(function(_$controller_, _$httpBackend_){
     $controller = _$controller_;
 	$httpBackend = _$httpBackend_;
-	$httpBackend.whenGET('http://localhost:8080/CXFRestServiceProj/rest/employeeService/getemployeedetail?employeeId=12345').respond(200, mockEmpList);
+	$httpBackend.whenGET('http://localhost:8080/CXFRestServiceProj/rest/employeeService/getemployeedetail?employeeId=123456').respond(200, mockEmpList);
   }));
 
   describe('empApp module test', function () {
   it('says hello employees!', function () {
       var $scope = {};
       var controller = $controller('empController', { $scope: $scope });
-	  $scope.empID = "123456";
+	  $scope.empID = "123455";
 	  $scope.getEmp();
 	  $httpBackend.flush();
 	  expect($scope.employees).not.toEqual(undefined);
