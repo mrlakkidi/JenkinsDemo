@@ -14,7 +14,7 @@ describe('Employee Rest Example', function () {
   it('says hello employees!', function () {
       var $scope = {};
       var controller = $controller('empController', { $scope: $scope });
-	  $scope.empID = "123455";
+	  $scope.empID = "123456";
 	  $scope.getEmp();
 	  $httpBackend.flush();
 	  expect($scope.employees).not.toEqual(undefined);
