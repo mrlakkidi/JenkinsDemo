@@ -38,7 +38,7 @@ public class AppTest
     }
 	public void testEmpDaoEmployee()throws Exception{
 		EmployeeDao empDao = new EmployeeDao();
-		assertEquals(empDao.getEmployeeDetails("123456").size(),1);
+		assertEquals(empDao.getEmployeeDetails("12345").size(),1);
 	}
 	public void testEmpDaoEmployees() throws Exception{
 		EmployeeDao empDao = new EmployeeDao();
