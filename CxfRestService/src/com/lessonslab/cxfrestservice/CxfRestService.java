@@ -24,6 +24,6 @@ public interface CxfRestService
 	@GET
 	@Produces({MediaType.APPLICATION_JSON})
 	@Path("/getemployeedetail")
-	public Response getEmployeeDetail(@QueryParam("employeeId") String employeeId) throws MyApplicationException
+	public Response getEmployeeDetail(@QueryParam("employeeId") String employeeId) throws MyApplicationException;
 	
 }
