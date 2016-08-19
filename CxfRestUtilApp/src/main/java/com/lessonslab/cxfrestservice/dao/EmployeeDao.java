@@ -18,9 +18,9 @@ public class EmployeeDao
 			emp.setEmail("test@example.com");
 			emp.setEmployeeId("123456");
 			emp.setFirstName("Pete");
-			emp.setLastName("Smith")
+			emp.setLastName("Smith");
 			empList.add(emp);
-		if(employeeId.equals("123456")) {
+		if(employeeId.equals("12345")) {
 			return empList;
 		} else if(employeeId.equals("*")){
 			Employee emp1 = new Employee();
