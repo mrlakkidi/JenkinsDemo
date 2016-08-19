@@ -106,7 +106,7 @@
           <useStandardDocletOptions>true</useStandardDocletOptions>
         </configuration>
       </plugin>
-	   <!-- <plugin>
+	   <plugin>
             <groupId>com.kelveden</groupId>
             <artifactId>maven-karma-plugin</artifactId>
             <version>1.6</version>
@@ -122,7 +122,7 @@
                 <karmaExecutable>karma</karmaExecutable>
 				<configFile>WebContent/test/karma.conf.js</configFile>
              </configuration>
-         </plugin> -->
+         </plugin>
       <plugin>
 		<groupId>org.apache.tomcat.maven</groupId>
 		<artifactId>tomcat7-maven-plugin</artifactId>
