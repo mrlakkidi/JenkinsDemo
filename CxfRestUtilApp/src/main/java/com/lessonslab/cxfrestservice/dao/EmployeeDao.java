@@ -20,7 +20,7 @@ public class EmployeeDao
 			emp.setFirstName("Pete");
 			emp.setLastName("Smith");
 			empList.add(emp);
-		if(employeeId.equals("12345")) {
+		if(employeeId.equals("123456")) {
 			return empList;
 		} else if(employeeId.equals("*")){
 			Employee emp1 = new Employee();
